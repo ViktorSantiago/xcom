@@ -1,0 +1,31 @@
+XCOM
+  Button (normal, arrow, clean)
+    -Button group
+    -Dropdown
+  Check
+  Radio
+  Select
+  Range
+  Input
+    - Filter
+    - Upload
+    - Date
+    - Validate
+  TextArea
+  Video
+  Carousel
+  Banner (alert, info, error)
+    - Closeable
+  BreadCrumb
+  Badges
+  Progress
+  Thumbnail
+  Panel (heading, footer, closeable)
+  Table
+    - Sortable
+  Tabs
+    -Justified
+  Tooltip
+  PopUp
+  Carousel
+  Audio
