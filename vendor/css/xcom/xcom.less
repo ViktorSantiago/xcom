@@ -1,0 +1,42 @@
+@import 'defs.less';
+@import 'mixins.less';
+
+.xcom {
+  font-size: 15px;
+}
+
+.xcom.btn {
+  background: @btn_background;
+  color: @btn_color;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.8em;
+  font-size: 1.2em;
+  padding: 0 .5em;
+  width: auto;
+  display: inline-block;
+  #ie7-fix > .inline-block();
+  border: 1px solid darken(@btn_background, 10%);
+  cursor: pointer;
+  cursor: hand;
+  &:hover {
+    background: lighten(@btn_background, 10%);
+    border-color: @btn_background;
+  } 
+  &.active {
+    background: @btn_active;
+    border: 1px solid darken(@btn_active, 10%);
+  }
+  &:hover.active {
+    background: @btn_active_hover;
+    border-color: darken(@btn_active_hover, 10%);
+  }
+  &.disabled {
+    background: lighten(@btn_background, 20%);
+    border-color: lighten(darken(@btn_background, 10%), 20%);
+    cursor: not-allowed;
+  }
+  &.round {
+    border-radius: 3px;
+  }
+}
