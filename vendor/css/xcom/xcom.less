@@ -2,7 +2,11 @@
 @import 'mixins.less';
 
 .xcom {
-  font-size: 15px;
+  font-size: @default_font_size;
+  .btn {
+    cursor:pointer;
+    cursor: hand;
+  }
 }
 
 .xcom.btn {
@@ -11,14 +15,11 @@
   font-weight: 800;
   text-align: center;
   line-height: 1.8em;
-  font-size: 1.2em;
   padding: 0 .5em;
   width: auto;
   display: inline-block;
   #ie7-fix > .inline-block();
   border: 1px solid darken(@btn_background, 10%);
-  cursor: pointer;
-  cursor: hand;
   &:hover {
     background: lighten(@btn_background, 10%);
     border-color: @btn_background;
@@ -37,6 +38,41 @@
     cursor: not-allowed;
   }
   &.round {
-    border-radius: 3px;
+    border-radius: 4px;
   }
 }
+
+.xcom.btn-group {
+  display:inline;
+  font-size: 0;
+  .xcom.btn {
+    font-size: @default_font_size;
+    margin: 0;
+  }
+  .xcom.btn {
+    border: 1px 0;
+    border-radius: 0;
+    border-right: 0;
+  }
+  .xcom.btn:first-child {
+    border-width: 1px 0 1px 1px;
+  }
+  .xcom.btn:last-child {
+    border-width: 1px;
+  }
+  &.round {
+    .xcom.btn:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+    .xcom.btn:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+
+
+
+
+
+

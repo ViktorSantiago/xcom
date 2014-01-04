@@ -22,13 +22,24 @@
   </head>
 <body class="xcom">
 
-  <div class="xcom btn">Normal</div>
-  <div class="xcom btn active">Active y más</div>
-  <div class="xcom btn disabled">Disabled</div>
+  <div class="xcom btn-group">
+    <button class="xcom btn disabled">Normal</button>
+    <button class="xcom btn">Disabled</button>
+    <button class="xcom btn">Normal</button>
+    <button class="xcom btn">Active y más</button>
+    <button class="xcom btn">Normal</button>
+    <button class="xcom btn">Normal</button>
+  </div>
+  
+  <button class="xcom btn disabled">Otro más</button>
+
+  <br>
+  
+  <input type="checkbox" class="xcom checkbox">
 
   <script type="text/javascript" src="vendor/js/jquery.js"></script>
   <script type="text/javascript" src="vendor/js/jquery-ui.js"></script>
   <script type="text/javascript" src="vendor/js/underscore.js"></script>
-
+  <script type="text/javascript" src="vendor/js/xcom/xcom.js"></script>
 </body>
 </html>
