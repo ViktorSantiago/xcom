@@ -13,12 +13,13 @@
   background: @btn_background;
   color: @btn_color;
   font-weight: 800;
+  font-size: @btn_font_size;
   text-align: center;
   line-height: 1.8em;
   padding: 0 .5em;
   width: auto;
   display: inline-block;
-  #ie7-fix > .inline-block();
+  #fix > .inline-block();
   border: 1px solid darken(@btn_background, 10%);
   &:hover {
     background: lighten(@btn_background, 10%);
@@ -46,7 +47,7 @@
   display:inline;
   font-size: 0;
   .xcom.btn {
-    font-size: @default_font_size;
+    font-size: @btn_font_size;
     margin: 0;
   }
   .xcom.btn {

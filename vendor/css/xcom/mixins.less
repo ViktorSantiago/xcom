@@ -1,6 +1,16 @@
-#ie7-fix {
+#fix {
   .inline-block () {
     zoom: 1;
     *display: inline;
+  }
+
+  .clearfix () {
+    overflow: auto;
+    zoom: 1;
+  }
+
+  .opacity (@alpha) {
+    filter: alpha(opacity=@alpha);
+    opacity: @alpha;
   }
 }
